@@ -6,3 +6,15 @@
 {% include_relative type.css %}
 {% include_relative theme.css %}
 {% pattern_css %}
+
+html {
+  font-family: sans-serif;
+}
+
+.grey-bg {
+  background-color: #e2e2e2;
+}
+
+.white-bg {
+  background-color: white;
+}
