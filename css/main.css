@@ -11,10 +11,19 @@ html {
   font-family: sans-serif;
 }
 
+label {
+  color: var(--color-accent);
+}
+
 .grey-bg {
   background-color: #e2e2e2;
 }
 
 .white-bg {
   background-color: white;
+}
+
+button {
+  background-color: var(--color-primary);
+  border: none;
 }
