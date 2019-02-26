@@ -25,10 +25,19 @@ main {
   background-color: var(--color-secondary);
 }
 
+label {
+  color: var(--color-accent);
+}
+
 .grey-bg {
   background-color: var(--color-accent-light);
 }
 
 .white-bg {
   background-color: white;
+}
+
+button {
+  background-color: var(--color-primary);
+  border: none;
 }
