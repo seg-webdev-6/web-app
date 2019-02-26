@@ -4,25 +4,33 @@
   <meta charset="utf-8">
   <title>{{page.title}} • Up Grade</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
   <header class="white-bg">
-    <div class="grid">
+    <div class="grid w-1 grid-bottom">
       <div class="unit s-1-2 left">
-        <img src="/images/logo.svg" alt="">
+        <div class="gutter">
+          <i class="icon i-128">
+            <img src="/images/logo.svg" alt="">
+          </i>
+        </div>
       </div>
-      <div class="unit s-1-2 right">
-        <ul class="list-grou-inline">
-          <li>Dashboard</li>
-          <li>Log out</li>
+      <div class="unit s-1-2 text-right island">
+        <ul class="list-group-inline">
+          <li><a class="island" href="#">Dashboard</a></li>
+          <li><a class="island" href="#">Log out</a></li>
         </ul>
       </div>
     </div>
   </header>
   {{content}}
   <footer class="white-bg">
-    <img src="/images/logo.svg" alt="">
+    <div class="gutter">
+      <i class="icon i-128">
+        <img src="/images/logo.svg" alt="">
+      </i>
+    </div>
   </footer>
 </body>
 </html>
