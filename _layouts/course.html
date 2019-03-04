@@ -1,3 +1,15 @@
 ---
 layout: default
 ---
+
+<main class="gutter">
+  <div class="gutter">
+    <h2 class="bold tena">{{page.title}}</h2>
+    <h3 class="zetta">Assignment Breakdown</h3>
+  </div>
+  <div class="grid">
+    {% for assignment in site.data.assignments %}
+      {% include assignment-card.html name=assignment.name grade=assignment.grade %}
+    {% endfor %}
+  </div>
+</main>

@@ -7,14 +7,40 @@
 {% include_relative theme.css %}
 {% pattern_css %}
 
-html {
+/* html {
   font-family: sans-serif;
-}
+} */
 
-main {
+.border-t {
   border-color: #e2e2e2;
   border-style: solid;
-  border-width: 1px 0px 1px 0px;
+  border-width: 1px 0px 0px 0px;
+}
+
+.border-r {
+  border-color: #e2e2e2;
+  border-style: solid;
+  border-width: 0px 1px 0px 0px;
+}
+
+.border-b {
+  border-color: #e2e2e2;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+
+.border-l {
+  border-color: #e2e2e2;
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+}
+
+.accent-dark {
+  color: var(--color-accent-dark);
+}
+
+.accent-light {
+  color: var(--color-accent);
 }
 
 .green-bg {
@@ -40,4 +66,23 @@ label {
 button {
   background-color: var(--color-primary);
   border: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+.current {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.drop-shadow {
+  box-shadow: 0 0 20px 0px var(--color-accent-light);
+  border-radius: 20px;
+}
+
+.course-card {
+  border-radius: 5px;
 }
