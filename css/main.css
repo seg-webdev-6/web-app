@@ -83,6 +83,33 @@ a {
   border-radius: 20px;
 }
 
-.course-card {
+.round-border {
   border-radius: 5px;
+}
+
+.assignment-width {
+  width: 100%;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .assignment-width {
+    width: 75%;
+  }
+
+  .push-r-assignment {
+    margin-right: 1.3rem;
+  }
+
+  .side-grades {
+    width: 25%;
+    position: sticky;
+    top: 0;
+    float: right;
+  }
+
 }

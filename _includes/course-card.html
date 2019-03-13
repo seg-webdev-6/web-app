@@ -1,6 +1,6 @@
 <div class="unit xs-1 m-1-2 l-1-3 island unit-content-center">
   <a class="embed embed-1by1 drop-shadow" href="/{{include.href}}">
-    <div class="embed-item course-card text-center island-1-2">
+    <div class="embed-item round-border text-center island-1-2">
       <h3 class="bold border-b push-1-2 pad-b-1-4 text-left gutter-1-4 giga">{{include.name}}</h3>
       <div class="grid grid-stretch">
         <div class="unit xs-1-2 border-r">
@@ -11,14 +11,15 @@
               <div class="pin-c embed embed-1by1">
                 <div class="embed-item" id="gm{{include.meter}}">
                 </div>
+                <script src="/scripts/gm{{include.meter}}.js"></script>
               </div>
             </div>
           </div>
         </div>
         <div class="unit xs-1-2">
-          <h4 class="kilo">Last Grade</h4>
+          <h4 class="kilo">Last Mark</h4>
+          <img class="img-flex w-1-2 margin-auto" src="/images/a-plus.svg" alt="">
         </div>
-        <script src="/scripts/gm{{include.meter}}.js"></script>
       </div>
     </div>
   </a>

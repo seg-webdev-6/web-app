@@ -5,11 +5,32 @@ layout: default
 <main class="gutter">
   <div class="gutter">
     <h2 class="bold tena">{{page.title}}</h2>
-    <h3 class="zetta">Assignment Breakdown</h3>
   </div>
-  <div class="grid">
-    {% for assignment in site.data.assignments %}
-      {% include assignment-card.html name=assignment.name grade=assignment.grade %}
-    {% endfor %}
+  <div class="side-grades">
+    <h3 class="text-center pad-t">Grade</h3>
+    <div class="grid border-l gutter">
+      <div class="unit xs-1-2 l-1">
+        <div class="embed embed-1by1">
+          <div class="embed-item" id="gm1">
+          </div>
+          <script src="/scripts/gm1.js"></script>
+        </div>
+      </div>
+      <div class="unit xs-1-2 l-1">
+        <div class="embed embed-1by1">
+          <div class="embed-item" id="gm2">
+          </div>
+          <script src="/scripts/gm2.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="assignment-width">
+    <h3 class="zetta gutter push-0">Assignment Breakdown</h3>
+    <ol class="list-group">
+      {% for assignment in site.data.assignments %}
+        {% include assignment-card.html name=assignment.name grade=assignment.grade submitted=assignment.submitted submit-date=assignment.submit-date feedback=assignment.feedback %}
+      {% endfor %}
+    </ol>
   </div>
 </main>

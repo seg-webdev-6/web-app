@@ -1,5 +1,5 @@
 var anim;
-var elem = document.getElementById('gm1')
+var elem = document.getElementById('gm2')
 var animData = {
     container: elem,
     renderer: 'svg',
@@ -9,12 +9,12 @@ var animData = {
         progressiveLoad:false
     },
     path: '/anims/data.json',
-    name: 'myAnimation',
+    name: 'myAnimation2',
 };
 anim = bodymovin.loadAnimation(animData);
 
 var waypoint = new Waypoint({
- element: document.getElementById('gm1'),
+ element: document.getElementById('gm2'),
  handler: function(direction) {
  anim.play();   /*THIS IS WHERE WE PLAY THE ANIMATION*/
  },

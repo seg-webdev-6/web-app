@@ -1,8 +1,20 @@
-<div class="unit xs-1 m-1-2 l-1-3 island unit-content-center">
-  <div class="embed embed-1by1 drop-shadow" href="#">
-    <div class="embed-item course-card text-center island-1-2">
-      <h3 class="bold border-b push-1-2 pad-b-1-4 text-left gutter-1-4 giga">{{include.name}}</h3>
-      <h4>{{include.grade}}</h4>
+<li class="island push-r-assignment">
+  <div class="drop-shadow" href="#">
+    <div class="round-border island-1-2">
+      <div class="grid">
+        <div class="unit xs-3-4 gutter-1-4 unit-content-distribute">
+          <h3 class="bold push-1-2 pad-b-1-4 giga">{{include.name}}</h3>
+          <h4 class="push-none">Submitted {{include.submitted}} on {{include.submit-date}}</h4>
+        </div>
+        <div class="unit xs-1-4">
+          <img class="img-flex w-1-2 right" src="/images/a-plus.svg" alt="">
+        </div>
+      </div>
+      {% unless include.feedback == "none" %}
+        <div class="gutter-1-4 pad-t-1-2">
+          <p class="pad-t-1-2 border-t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      {% endunless %}
     </div>
   </div>
-</div>
+</li>
