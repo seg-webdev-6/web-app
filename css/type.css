@@ -44,7 +44,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 dfn,
@@ -108,7 +108,11 @@ thead th {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 700;
 }
 
 .italic {

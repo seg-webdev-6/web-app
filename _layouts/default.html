@@ -5,9 +5,13 @@
   <title>{{page.title}} • Up Grade</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/fnl5bll.css">
+  <script src="/scripts/lottie.js"></script>
+  <script src="/scripts/noframework.waypoints.min.js"></script>
 </head>
 <body>
-  <header class="white-bg">
+
+  <header class="white-bg border-b push gutter">
     <div class="grid w-1 grid-bottom">
       <div class="unit s-1-2 left">
         <div class="gutter">
@@ -16,21 +20,22 @@
           </i>
         </div>
       </div>
-      <div class="unit s-1-2 text-right island">
+      <div class="unit s-1-2 text-right">
         <ul class="list-group-inline">
-          <li><a class="island" href="#">Dashboard</a></li>
-          <li><a class="island" href="#">Log out</a></li>
+          <li><a class="gutter {{page.current}}" href="/dashboard">Dashboard</a></li>
+          <li><a class="gutter" href="/index">Log out</a></li>
         </ul>
       </div>
     </div>
   </header>
   {{content}}
-  <footer class="white-bg">
+  <footer class="white-bg border-t gutter">
     <div class="gutter">
       <i class="icon i-128">
         <img src="/images/logo.svg" alt="">
       </i>
     </div>
   </footer>
+
 </body>
 </html>
