@@ -1,0 +1,36 @@
+- name: Elevator Pitch
+  grade: 100%
+  letter-grade: a-plus
+  submitted: On Time
+  submit-date: September 12, 2018
+  feedback: Great work. Pitch was seamless and mat all the criteria. Watch your fidgeting
+- name: Intro to linguistics
+  grade: 87%
+  letter-grade: a
+  submitted: On Time
+  submit-date: September 29, 2018
+  feedback: Great
+- name: Pecha Kucha
+  grade: 80%
+  letter-grade: a-minus
+  submitted: On Time
+  submit-date: October 11, 2018
+  feedback: Slides need to be more visual, less words. Otherwise very good work.
+- name: Soft Skills vs Hard Skills
+  grade: 90%
+  letter-grade: a
+  submitted: On Time
+  submit-date: November 4, 2018
+  feedback: I like it!
+- name: Public Speaking for Dummies
+  grade: 67%
+  letter-grade: c-plus
+  submitted: Late
+  submit-date: November 28, 2018
+  feedback: I'm concerned you are falling behind. Don't hesitate to ask for help
+- name: Interviews
+  grade: 0%
+  letter-grade: f
+  submitted: Not submitted
+  submit-date: December 16, 2018
+  feedback: Meet me after class

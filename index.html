@@ -9,33 +9,43 @@
 </head>
 <body class="white-bg login-bg gutter">
 
-  <div class="login-card white-bg island drop-shadow text-center w-1">
-    <header class="push">
-      <img src="images/logo.svg" alt="">
-    </header>
-    <main class="push">
-      <form class="" action="index.html" method="post">
-        <div class="push-1-2">
-          <select class="border-b" id="school">
-            <option value=""></option>
-            <option value="algonquin">Algonquin College</option>
-            <option value="university-of-ottawa">University of Ottawa</option>
-            <option value="carleton-university">Carleton University</option>
-            <option value="la-cite">Collège La Cité</option>
-          </select>
-          <label for="school">School</label>
+  <script src="/scripts/lottie.js"></script>
+
+  <div class="login-card island drop-shadow text-center w-1">
+    <div class="login-background pin-c">
+      <img class="img-flex" src="/images/index-background.png" alt="">
+    </div>
+    <div class="island-2">
+      <header class="push">
+        <!-- <img src="images/logo.svg" alt=""> -->
+        <div class="" id="logo">
         </div>
-        <div class="push-1-2">
-          <input class="border-b push-1-4 text-center" id="school-email" type="email" name="" value="">
-          <label for="school-email">School E-mail</label>
-        </div>
-        <div class="push">
-          <input class="border-b push-1-4 text-center" id="password" type="password" name="" value="">
-          <label for="password">Password</label>
-        </div>
-        <a class="btn green-bg" href="dashboard">Log In</a>
-      </form>
-    </main>
+        <script src="/scripts/logo.js"></script>
+      </header>
+      <main class="push">
+        <form class="" action="index.html" method="post">
+          <div class="push-1-2">
+            <select class="border-b" id="school">
+              <option value=""></option>
+              <option value="algonquin">Algonquin College</option>
+              <option value="university-of-ottawa">University of Ottawa</option>
+              <option value="carleton-university">Carleton University</option>
+              <option value="la-cite">Collège La Cité</option>
+            </select>
+            <label for="school">School</label>
+          </div>
+          <div class="push-1-2">
+            <input class="border-b push-1-4 text-center" id="school-email" type="email" name="" value="">
+            <label for="school-email">School E-mail</label>
+          </div>
+          <div class="push">
+            <input class="border-b push-1-4 text-center" id="password" type="password" name="" value="">
+            <label for="password">Password</label>
+          </div>
+          <a class="btn green-bg" href="dashboard">Log In</a>
+        </form>
+      </main>
+    </div>
     <footer>
       <small class="accent-light">Copyright © 2019 SEG Web Development</small>
     </footer>
