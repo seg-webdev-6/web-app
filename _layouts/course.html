@@ -64,7 +64,7 @@ layout: default
       <h3 class="zetta push-0 bolder border-t pad-t">Assignment Breakdown</h3>
     </div>
     <ol class="list-group">
-      {% for assignment in site.data.assignments-communications-2 %}
+      {% for assignment in site.data[page.data] %}
         {% include assignment-card.html name=assignment.name letter-grade=assignment.letter-grade grade=assignment.grade submitted=assignment.submitted submit-date=assignment.submit-date feedback=assignment.feedback %}
       {% endfor %}
     </ol>
