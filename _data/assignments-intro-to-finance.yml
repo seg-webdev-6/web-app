@@ -1,36 +1,36 @@
 - name: Build a Budget
   grade: 90%
-  letter-grade: A
+  letter-grade: a
   submitted: On Time
   submit-date: September 10, 2018
   feedback: Great work. Secion 2 could be a little bit more specific, but otherwise excellent work.
 - name: The Impact of Daily Decisions
   grade: 88%
-  letter-grade: B+
+  letter-grade: b-plus
   submitted: On Time
   submit-date: October 1, 2018
   feedback: Looks good - Please go back to lesson 5 for any clarification on RRSPs
 - name: Interest
   grade: 79%
-  letter-grade: B-
+  letter-grade: b-minus
   submitted: Late
   submit-date: October 27, 2018
   feedback: Awesome work.  5 marks off as late penalty, reevaluate your time management.
 - name: Bankruptcy
   grade: 95%
-  letter-grade: A+
+  letter-grade: a-plus
   submitted: On Time
   submit-date: November 2, 2018
-  feedback: Really good work, I can tell you've been applying yourslef!
+  feedback: Really good work, I can tell you've been applying yourself!
 - name: Insurance
   grade: 62%
-  letter-grade: C+
+  letter-grade: c-plus
   submitted: Late
   submit-date: November 30, 2018
   feedback: Yikes! Looks like this was started the night before submission. If you are struggling, email me and we can arrange support.
 - name: Real World Taxes
   grade: 85
-  letter-grade: B
+  letter-grade: b
   submitted: On Time
   submit-date: December 4, 2018
   feedback: Good work, watch out for spelling and grammar (see section 5 notes)
