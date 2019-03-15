@@ -1,13 +1,14 @@
-<li class="island push-r-assignment">
+<li class="island push-r-assignment" tabindex="0">
   <div class="drop-shadow" href="#">
     <div class="round-border island-1-2">
       <div class="grid">
         <div class="unit xs-3-4 gutter-1-4 unit-content-distribute">
           <h3 class="bold push-1-2 pad-b-1-4 giga">{{include.name}}</h3>
+          <h4 class="push-0">You recieved <strong>{{include.grade}}</strong></h4>
           <h4 class="push-none">Submitted {{include.submitted}} on {{include.submit-date}}</h4>
         </div>
         <div class="unit xs-1-4">
-          <img class="img-flex w-1-2 right" src="/images/a-plus.svg" alt="">
+          <img class="img-flex w-1-2 right" src="/images/{{include.letter-grade}}.svg" alt="">
         </div>
       </div>
       {% unless include.feedback == "none" %}
