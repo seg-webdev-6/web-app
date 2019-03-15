@@ -3,28 +3,34 @@
   grade: 70%
   meter: 70
   last-mark: c-plus
+  course-comment: Grades are steady.
 - name: Communications II
   href: communications-2
   grade: 87%
   meter: 85
   last-mark: a-minus
+  course-comment: Grades going up!
 - name: Political Science
   href: political-science
   grade: 80%
   meter: 80
   last-mark: b
+  course-comment: Keep up the good work!
 - name: Business Management
   href: business-management
   grade: 90%
   meter: 90
   last-mark: a-plus
+  course-comment: Excelennnnnnt :D
 - name: Public Relations
   href: public-relations
   grade: 67%
   meter: 65
   last-mark: d-plus
+  course-comment: Focus on improving this!
 - name: Linguistics
   href: linguistics
   grade: 50%
   meter: 50
   last-mark: f
+  course-comment: This might need some help :(

@@ -7,7 +7,7 @@ layout: default
     <div class="unit xs-1 l-1-2 gutter-1-2 tab-border-none" tabindex="0">
       <h2 class="bold tena">{{page.title}}</h2>
       <p class="peta">{{page.motivation}}</p>
-      <p class="peta">Aim for {{page.course-aim}}% on your upcoming assignments to get closer to your goal of {{page.course-goal}}%</p>
+      <p class="peta">Aim for <strong>{{page.course-aim}}%</strong> on your upcoming assignments to get closer to your goal of <strong>{{page.course-goal}}%</strong></p>
     </div>
     <div class="unit xs-1 l-1-2">
       <div class="grid grid-middle">
@@ -19,10 +19,10 @@ layout: default
         <div class="unit xs-1 s-1-2 gutter-1-2">
           <aside class="" role="complementary">
             <h5>Need help with your goal?</h5>
-            <p class="push-0">Here are some suggestions:</p>
+            <p class="push-0 bold">Here are some suggestions:</p>
             <ul class="list-group accent-light">
-              <li>google.com</li>
-              <li>tutors.com</li>
+              <li><a href="http://www.google.com/search?q={{page.title}}">Read more on this subject.</a></li>
+              <li><a href="http://tutors.com">Tutors are a huge help!</a></li>
             </ul>
           </aside>
         </div>
