@@ -1,20 +1,30 @@
 - name: Intro to Finance
   href: intro-to-finance
   grade: 70%
-  meter: 1
+  meter: 70
+  last-mark: c-plus
 - name: Communications II
   href: communications-2
   grade: 87%
-  meter: 2
+  meter: 85
+  last-mark: a-minus
 - name: Political Science
   href: political-science
   grade: 80%
+  meter: 80
+  last-mark: b
 - name: Business Management
   href: business-management
   grade: 90%
+  meter: 90
+  last-mark: a-plus
 - name: Public Relations
   href: public-relations
   grade: 67%
+  meter: 65
+  last-mark: d-plus
 - name: Linguistics
   href: linguistics
   grade: 50%
+  meter: 50
+  last-mark: f

@@ -55,6 +55,10 @@ label {
   color: var(--color-accent);
 }
 
+select {
+  text-align-last:center;
+}
+
 .grey-bg {
   background-color: var(--color-accent-light);
 }
@@ -63,9 +67,37 @@ label {
   background-color: white;
 }
 
-button {
+.login-bg {
+  height: 100vh;
+}
+
+header a {
+  transition: all .2s ease-in-out;
+}
+
+header a:hover {
+  color: var(--color-accent-dark);
+  transition: all .2s ease-in-out;
+}
+
+.login-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 20rem;
+  z-index: 1
+}
+
+.tab-border-none[tabindex] {
+  outline: none;
+}
+
+button, .btn {
   background-color: var(--color-primary);
   border: none;
+  width: 40%;
+  transition: all .2s ease-in-out;
 }
 
 a {
@@ -93,6 +125,15 @@ a {
 
 .margin-auto {
   margin: auto;
+}
+
+.course-card {
+  transition: all .2s;
+}
+
+.course-card:hover{
+  padding: .65rem;
+  transition: all .2s;
 }
 
 @media only screen and (min-width: 60em) {

@@ -11,30 +11,40 @@
 </head>
 <body>
 
-  <header class="white-bg border-b push gutter">
+  <header class="white-bg border-b push gutter" role="banner">
     <div class="grid w-1 grid-bottom">
-      <div class="unit s-1-2 left">
+      <div class="unit xs-1-2 left">
         <div class="gutter">
-          <i class="icon i-128">
-            <img src="/images/logo.svg" alt="">
-          </i>
+          <a href="/dashboard">
+            <i class="icon i-128">
+              <img src="/images/logo.svg" alt="">
+            </i>
+          </a>
         </div>
       </div>
-      <div class="unit s-1-2 text-right">
-        <ul class="list-group-inline">
-          <li><a class="gutter {{page.current}}" href="/dashboard">Dashboard</a></li>
-          <li><a class="gutter" href="/index">Log out</a></li>
-        </ul>
+      <div class="unit xs-1-2 text-right">
+        <nav role="nav">
+          <ul class="list-group-inline">
+            <li><a class="gutter {{page.current}}" href="/dashboard">Dashboard</a></li>
+            <li><a class="gutter" href="/index">Log out</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
   {{content}}
-  <footer class="white-bg border-t gutter">
-    <div class="gutter">
-      <i class="icon i-128">
-        <img src="/images/logo.svg" alt="">
-      </i>
+  <footer class="white-bg border-t gutter" role="contentinfo">
+    <div class="grid grid-middle">
+      <a class="unit xs-1-2 gutter" href="/dashboard">
+        <i class="icon i-128">
+          <img src="/images/logo.svg" alt="">
+        </i>
+      </a>
+      <div class="unit xs-1-2 text-right gutter">
+        <small class="text-right accent-light">Copyright &copy; 2019 SEG Web Development</small>
+      </div>
     </div>
+
   </footer>
 
 </body>

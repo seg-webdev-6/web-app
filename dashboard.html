@@ -4,9 +4,9 @@ title: Dashboard
 current: current
 ---
 
-<main>
-  <div class="banner gutter">
-    <h2 class="gutter bold">Welcome back Petra, you're on a roll!</h2>
+<main role="main">
+  <div class="banner gutter tab-border-none" tabindex="0">
+    <h2 class="gutter bold">Welcome back Hot Shot, you're on a roll!</h2>
     <div class="grid island-1-2">
       <div class="unit s-2-3">
         <div class="embed embed-2by1 green-bg">
@@ -17,20 +17,21 @@ current: current
       </div>
       <div class="unit s-1-3 island-1-2">
         <div class="embed embed-1by1 white-bg">
-          <div class="embed-item" id="gm-big">
-
+          <div class="embed-item">
+            <h4 class="pin-c yotta bolder accent-dark">74%</h4>
+            <div id="gm-big">
+            </div>
+            <script src="/scripts/gm-big.js"></script>
           </div>
-          <script src="/scripts/gm-big.js"></script>
+
         </div>
       </div>
     </div>
   </div>
 
-  <p class="gutter push-0 text-center italic accent-light">Click on a Course Card to see more details</p>
-
   <div class="grid course-grid island">
     {% for course in site.data.courses %}
-      {% include course-card.html name=course.name grade=course.grade meter=course.meter href=course.href %}
+      {% include course-card.html name=course.name grade=course.grade meter=course.meter href=course.href last-mark=course.last-mark %}
     {% endfor %}
   </div>
 </main>

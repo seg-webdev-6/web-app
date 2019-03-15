@@ -848,7 +848,7 @@ select {
 }
 
 [type="checkbox"]:focus + label::before {
-  outline: 3px solid #000;
+  outline: 3px solid var(--color-accent);
   z-index: 1000;
 }
 
@@ -876,7 +876,7 @@ select {
 
 [type="radio"]:focus + label::before,
 [type="radio"] + label:focus::before {
-  box-shadow: 0 0 0 3px #000;
+  box-shadow: 0 0 0 3px var(--color-accent);
   z-index: 1000;
 }
 
@@ -934,17 +934,17 @@ select {
 
   -webkit-appearance: none;
   appearance: none;
-  background-color: #000;
+  background-color: var(--color-accent);
   border: none;
   border-radius: 50%;
 }
 
 [type="range"]:hover::-webkit-slider-thumb {
-  background-color: #000;
+  background-color: var(--color-accent);
 }
 
 [type="range"]:active::-webkit-slider-thumb {
-  background-color: #000;
+  background-color: var(--color-accent);
 }
 
 [type="range"]::-moz-range-thumb {
@@ -954,17 +954,17 @@ select {
 
   -webkit-appearance: none;
   appearance: none;
-  background-color: #000;
+  background-color: var(--color-accent);
   border: none;
   border-radius: 50%;
 }
 
 [type="range"]:hover::-moz-range-thumb {
-  background-color: #000;
+  background-color: var(--color-accent);
 }
 
 [type="range"]:active::-moz-range-thumb {
-  background-color: #000;
+  background-color: var(--color-accent);
 }
 
 [type="range"]::-ms-thumb {
@@ -974,17 +974,17 @@ select {
 
   -webkit-appearance: none;
   appearance: none;
-  background-color: #000;
+  background-color: var(--color-accent);
   border: none;
   border-radius: 50%;
 }
 
 [type="range"]:hover::-ms-thumb {
-  background-color: #000;
+  background-color: var(--color-accent);
 }
 
 [type="range"]:active::-ms-thumb {
-  background-color: #000;
+  background-color: var(--color-accent);
 }
 
 [type="checkbox"].hide-custom-input + label::before,
@@ -1034,8 +1034,8 @@ button:focus,
 button:hover,
 .btn:focus,
 .btn:hover {
-  background-color: #000;
-  border-color: #000;
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
   color: #fff;
 }
 
@@ -1046,7 +1046,7 @@ button[disabled] {
 .btn-light, .btn--light {
   background-color: #e2e2e2;
   border-color: #e2e2e2;
-  color: #000;
+  color: var(--color-accent);
 }
 
 .btn-light:focus,
@@ -1062,7 +1062,7 @@ button[disabled] {
 .btn--ghost {
   background-color: transparent;
   border-color: #333;
-  color: #000;
+  color: var(--color-accent);
 }
 
 .btn-ghost:focus,
@@ -1070,8 +1070,8 @@ button[disabled] {
 .btn--ghost:focus,
 .btn--ghost:hover {
   background-color: #e2e2e2;
-  border-color: #000;
-  color: #000;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .btn-link {
@@ -1101,7 +1101,7 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  outline: 3px solid #000;
+  outline: 3px solid var(--color-accent);
   outline-offset: 0;
 }
 
@@ -1125,7 +1125,7 @@ a:focus, [tabindex="0"]:focus {
   position: absolute;
   top: -10em;
   z-index: 10000; /* To make sure they're always on top */
-  background-color: #000;
+  background-color: var(--color-accent);
   border: 0;
   color: #fff;
   font-size: 1.125rem;
@@ -1266,7 +1266,7 @@ a:focus, [tabindex="0"]:focus {
 
   *, *::before, *::after, *::first-letter, *::first-line {
     background: none transparent !important;
-    color: #000 !important;
+    color: var(--color-accent) !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }

@@ -1,9 +1,9 @@
-<div class="unit xs-1 m-1-2 l-1-3 island unit-content-center">
-  <a class="embed embed-1by1 drop-shadow" href="/{{include.href}}">
-    <div class="embed-item round-border text-center island-1-2">
+<div class="unit xs-1 s-1 m-1-2 l-1-3 island unit-content-center course-card">
+  <a class="drop-shadow" href="/{{include.href}}">
+    <div class="round-border text-center island-1-2">
       <h3 class="bold border-b push-1-2 pad-b-1-4 text-left gutter-1-4 giga">{{include.name}}</h3>
       <div class="grid grid-stretch">
-        <div class="unit xs-1-2 border-r">
+        <div class="unit xs-1-2 border-r push-1-2">
           <h4 class="push-0 kilo">Your Average</h4>
           <div class="embed embed-1by1">
             <div class="embed-item">
@@ -18,7 +18,10 @@
         </div>
         <div class="unit xs-1-2">
           <h4 class="kilo">Last Mark</h4>
-          <img class="img-flex w-1-2 margin-auto" src="/images/a-plus.svg" alt="">
+          <img class="img-flex w-1-2 margin-auto" src="/images/{{include.last-mark}}.svg" alt="{{include.last-mark}}">
+        </div>
+        <div class="unit xs-1 border-t pad-t-1-2">
+          <h5>Keep up the good work!</h5>
         </div>
       </div>
     </div>

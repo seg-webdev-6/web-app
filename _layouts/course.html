@@ -2,34 +2,70 @@
 layout: default
 ---
 
-<main class="gutter">
-  <div class="gutter">
-    <h2 class="bold tena">{{page.title}}</h2>
-  </div>
-  <div class="side-grades">
-    <h3 class="text-center pad-t">Grade</h3>
-    <div class="grid border-l gutter">
-      <div class="unit xs-1-2 l-1">
-        <div class="embed embed-1by1">
-          <div class="embed-item" id="gm1">
-          </div>
-          <script src="/scripts/gm1.js"></script>
+<main class="gutter" role="main">
+  <div class="gutter-1-2 grid">
+    <div class="unit xs-1 l-1-2 gutter-1-2 tab-border-none" tabindex="0">
+      <h2 class="bold tena">{{page.title}}</h2>
+      <p class="peta">{{page.motivation}}</p>
+      <p class="peta">Aim for {{page.course-aim}}% on your upcoming assignments to get closer to your goal of {{page.course-goal}}%</p>
+    </div>
+    <div class="unit xs-1 l-1-2">
+      <div class="grid grid-middle">
+        <div class="unit unit-xs-hidden s-1-2 gutter-1-2 text-right">
+          <i class="icon i-192">
+            <img class="island" src="/images/{{page.dude}}.svg" alt="">
+          </i>
         </div>
-      </div>
-      <div class="unit xs-1-2 l-1">
-        <div class="embed embed-1by1">
-          <div class="embed-item" id="gm2">
-          </div>
-          <script src="/scripts/gm2.js"></script>
+        <div class="unit xs-1 s-1-2 gutter-1-2">
+          <aside class="" role="complementary">
+            <h5>Need help with your goal?</h5>
+            <p class="push-0">Here are some suggestions:</p>
+            <ul class="list-group accent-light">
+              <li>google.com</li>
+              <li>tutors.com</li>
+            </ul>
+          </aside>
         </div>
       </div>
     </div>
   </div>
-  <div class="assignment-width">
-    <h3 class="zetta gutter push-0">Assignment Breakdown</h3>
+  <div class="side-grades">
+    <div class="grid gutter">
+      <div class="unit xs-1-2 l-1">
+        <h3 class="text-center pad-t">Grade</h3>
+        <div class="embed embed-1by1">
+          <div class="embed-item">
+            <h4 class="pin-c bolder accent-dark">{{page.course-grade}}%</h4>
+            <div class="pin-c embed embed-1by1">
+              <div class="embed-item" id="gm{{page.grade-meter}}">
+              </div>
+              <script src="/scripts/gm{{page.grade-meter}}.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="unit xs-1-2 l-1">
+        <h3 class="text-center pad-t">Goal</h3>
+        <div class="embed embed-1by1">
+          <div class="embed-item">
+            <h4 class="pin-c bolder accent-dark">{{page.course-goal}}%</h4>
+            <div class="pin-c embed embed-1by1">
+              <div class="embed-item" id="gm{{page.course-goal}}">
+              </div>
+              <script src="/scripts/gm{{page.course-goal}}.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="assignment-width" tabindex="0">
+    <div class="gutter">
+      <h3 class="zetta push-0 bolder border-t pad-t">Assignment Breakdown</h3>
+    </div>
     <ol class="list-group">
-      {% for assignment in site.data.assignments %}
-        {% include assignment-card.html name=assignment.name grade=assignment.grade submitted=assignment.submitted submit-date=assignment.submit-date feedback=assignment.feedback %}
+      {% for assignment in site.data.assignments-communications-2 %}
+        {% include assignment-card.html name=assignment.name letter-grade=assignment.letter-grade grade=assignment.grade submitted=assignment.submitted submit-date=assignment.submit-date feedback=assignment.feedback %}
       {% endfor %}
     </ol>
   </div>
